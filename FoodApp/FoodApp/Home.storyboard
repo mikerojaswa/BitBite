@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cxn-df-CAj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="qAB-tx-jCs">
+            <objects>
+                <viewController id="vnq-2e-y92" customClass="MapViewController" customModule="FoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2mM-3l-Fhe"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Ma-o0-U7G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jNX-HI-Rsb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uEq-F6-dcT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRI-wt-Rs7">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.10980392160000001" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="68o-0j-FPx"/>
+                                    <constraint firstAttribute="width" constant="343" id="Bsc-Ue-8wa"/>
+                                </constraints>
+                                <state key="normal" title="Find food!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findFoodButtonPressed:" destination="vnq-2e-y92" eventType="touchUpInside" id="LKN-bc-SE8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uEq-F6-dcT" secondAttribute="trailing" id="29w-RV-NJZ"/>
+                            <constraint firstItem="GRI-wt-Rs7" firstAttribute="centerX" secondItem="uEq-F6-dcT" secondAttribute="centerX" id="5yU-cm-qjt"/>
+                            <constraint firstItem="GRI-wt-Rs7" firstAttribute="top" secondItem="uEq-F6-dcT" secondAttribute="bottom" constant="-70" id="GWv-4V-xNA"/>
+                            <constraint firstItem="uEq-F6-dcT" firstAttribute="leading" secondItem="jNX-HI-Rsb" secondAttribute="leading" id="QE9-kA-SoX"/>
+                            <constraint firstItem="uEq-F6-dcT" firstAttribute="top" secondItem="2mM-3l-Fhe" secondAttribute="bottom" constant="-20" id="hz1-2J-lq7"/>
+                            <constraint firstItem="2Ma-o0-U7G" firstAttribute="top" secondItem="uEq-F6-dcT" secondAttribute="bottom" id="yeE-vP-vxA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fhC-ju-OIx"/>
+                    <connections>
+                        <outlet property="findFoodButton" destination="GRI-wt-Rs7" id="jxY-Yp-gwv"/>
+                        <outlet property="mapView" destination="uEq-F6-dcT" id="S1Q-rR-NUV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ca4-m6-Kqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503" y="776"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BN0-hq-pYC">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="cxn-df-CAj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M2S-RB-D0w">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vnq-2e-y92" kind="relationship" relationship="rootViewController" id="xk5-LV-6dC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8K-1L-yv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1386" y="776"/>
+        </scene>
+    </scenes>
+</document>
