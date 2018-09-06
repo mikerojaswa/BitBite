@@ -8,40 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		4C5EE5061FECDD43004C1791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE5051FECDD43004C1791 /* AppDelegate.swift */; };
-		4C5EE5081FECDD43004C1791 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE5071FECDD43004C1791 /* ViewController.swift */; };
 		4C5EE50D1FECDD43004C1791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EE50C1FECDD43004C1791 /* Assets.xcassets */; };
 		4C5EE5101FECDD43004C1791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EE50E1FECDD43004C1791 /* LaunchScreen.storyboard */; };
 		4C5EE5181FECDE0B004C1791 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EE5171FECDE0B004C1791 /* Home.storyboard */; };
 		4C5EE51A1FECDE2E004C1791 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE5191FECDE2E004C1791 /* MapViewController.swift */; };
-		4C5EE51C1FECDE3E004C1791 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE51B1FECDE3D004C1791 /* Event.swift */; };
-		4C5EE51E1FECDE45004C1791 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE51D1FECDE45004C1791 /* Menu.swift */; };
-		4C5EE5201FECDE4C004C1791 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE51F1FECDE4B004C1791 /* PopUpViewController.swift */; };
-		4C5EE5221FECDE50004C1791 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE5211FECDE50004C1791 /* User.swift */; };
 		4C5EE5241FECDE58004C1791 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE5231FECDE58004C1791 /* Restaurant.swift */; };
-		4C5EE5261FECDE60004C1791 /* RestaurantMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE5251FECDE60004C1791 /* RestaurantMock.swift */; };
-		4C5EE5281FECDE6E004C1791 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EE5271FECDE6E004C1791 /* PopUpViewController.xib */; };
-		4C5EE52B1FF0923B004C1791 /* FoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE52A1FF0923B004C1791 /* FoodButton.swift */; };
-		4C5EE52D1FF09570004C1791 /* FoodButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EE52C1FF09570004C1791 /* FoodButton.xib */; };
+		4C5EE5321FF1065E004C1791 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE5311FF1065E004C1791 /* WebService.swift */; };
+		4C5EE5341FF108E2004C1791 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE5331FF108E2004C1791 /* Extensions.swift */; };
+		4CA379F62116AB410094CE15 /* RestaurantResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA379F52116AB410094CE15 /* RestaurantResult.swift */; };
+		4CA379F92116B4C10094CE15 /* ThumbnailAndLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA379F72116B4C10094CE15 /* ThumbnailAndLabelTableViewCell.swift */; };
+		4CA379FA2116B4C10094CE15 /* ThumbnailAndLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA379F82116B4C10094CE15 /* ThumbnailAndLabelTableViewCell.xib */; };
+		4CA379FC2116C7090094CE15 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA379FB2116C7090094CE15 /* CustomTableView.swift */; };
+		4CE9FFF52119722E002AB698 /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9FFF32119722E002AB698 /* ResultCell.swift */; };
+		4CE9FFF62119722E002AB698 /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9FFF42119722E002AB698 /* ResultCell.xib */; };
+		4CE9FFF821197743002AB698 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9FFF721197743002AB698 /* TravelModel.swift */; };
+		B5C583CA5F49170276235F6E /* Pods_FoodApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747A32B2973E4B5DF9F33937 /* Pods_FoodApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04298ECC898E0B9A42383148 /* Pods-FoodApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodApp/Pods-FoodApp.release.xcconfig"; sourceTree = "<group>"; };
 		4C5EE5021FECDD43004C1791 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5EE5051FECDD43004C1791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C5EE5071FECDD43004C1791 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C5EE50C1FECDD43004C1791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C5EE50F1FECDD43004C1791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C5EE5111FECDD43004C1791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5EE5171FECDE0B004C1791 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4C5EE5191FECDE2E004C1791 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		4C5EE51B1FECDE3D004C1791 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		4C5EE51D1FECDE45004C1791 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		4C5EE51F1FECDE4B004C1791 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		4C5EE5211FECDE50004C1791 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4C5EE5231FECDE58004C1791 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		4C5EE5251FECDE60004C1791 /* RestaurantMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantMock.swift; sourceTree = "<group>"; };
-		4C5EE5271FECDE6E004C1791 /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
-		4C5EE52A1FF0923B004C1791 /* FoodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodButton.swift; sourceTree = "<group>"; };
-		4C5EE52C1FF09570004C1791 /* FoodButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodButton.xib; sourceTree = "<group>"; };
+		4C5EE5311FF1065E004C1791 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		4C5EE5331FF108E2004C1791 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4CA379F52116AB410094CE15 /* RestaurantResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantResult.swift; sourceTree = "<group>"; };
+		4CA379F72116B4C10094CE15 /* ThumbnailAndLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailAndLabelTableViewCell.swift; sourceTree = "<group>"; };
+		4CA379F82116B4C10094CE15 /* ThumbnailAndLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailAndLabelTableViewCell.xib; sourceTree = "<group>"; };
+		4CA379FB2116C7090094CE15 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		4CE9FFF32119722E002AB698 /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		4CE9FFF42119722E002AB698 /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCell.xib; sourceTree = "<group>"; };
+		4CE9FFF721197743002AB698 /* TravelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		747A32B2973E4B5DF9F33937 /* Pods_FoodApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B8352ACE5AF90A19074209 /* Pods-FoodApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodApp/Pods-FoodApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C583CA5F49170276235F6E /* Pods_FoodApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,8 @@
 			children = (
 				4C5EE5041FECDD43004C1791 /* FoodApp */,
 				4C5EE5031FECDD43004C1791 /* Products */,
+				FF6167052B5D142D810835A4 /* Pods */,
+				C1DFB46BE00AC95DBA742C2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,32 +81,57 @@
 		4C5EE5041FECDD43004C1791 /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
-				4C5EE5291FF091D1004C1791 /* UI */,
+				4C7A7F5820F85C5500F432DA /* Models */,
+				4C5EE5301FF1064C004C1791 /* Networking */,
 				4C5EE5051FECDD43004C1791 /* AppDelegate.swift */,
-				4C5EE5071FECDD43004C1791 /* ViewController.swift */,
 				4C5EE5191FECDE2E004C1791 /* MapViewController.swift */,
+				4CA379FB2116C7090094CE15 /* CustomTableView.swift */,
 				4C5EE5171FECDE0B004C1791 /* Home.storyboard */,
 				4C5EE50C1FECDD43004C1791 /* Assets.xcassets */,
 				4C5EE50E1FECDD43004C1791 /* LaunchScreen.storyboard */,
 				4C5EE5111FECDD43004C1791 /* Info.plist */,
-				4C5EE51B1FECDE3D004C1791 /* Event.swift */,
-				4C5EE51D1FECDE45004C1791 /* Menu.swift */,
-				4C5EE5231FECDE58004C1791 /* Restaurant.swift */,
-				4C5EE5211FECDE50004C1791 /* User.swift */,
-				4C5EE5251FECDE60004C1791 /* RestaurantMock.swift */,
-				4C5EE51F1FECDE4B004C1791 /* PopUpViewController.swift */,
-				4C5EE5271FECDE6E004C1791 /* PopUpViewController.xib */,
+				4CA379F72116B4C10094CE15 /* ThumbnailAndLabelTableViewCell.swift */,
+				4CA379F82116B4C10094CE15 /* ThumbnailAndLabelTableViewCell.xib */,
+				4CE9FFF32119722E002AB698 /* ResultCell.swift */,
+				4CE9FFF42119722E002AB698 /* ResultCell.xib */,
 			);
 			path = FoodApp;
 			sourceTree = "<group>";
 		};
-		4C5EE5291FF091D1004C1791 /* UI */ = {
+		4C5EE5301FF1064C004C1791 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				4C5EE52A1FF0923B004C1791 /* FoodButton.swift */,
-				4C5EE52C1FF09570004C1791 /* FoodButton.xib */,
+				4C5EE5311FF1065E004C1791 /* WebService.swift */,
+				4C5EE5331FF108E2004C1791 /* Extensions.swift */,
 			);
-			path = UI;
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4C7A7F5820F85C5500F432DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C5EE5231FECDE58004C1791 /* Restaurant.swift */,
+				4CA379F52116AB410094CE15 /* RestaurantResult.swift */,
+				4CE9FFF721197743002AB698 /* TravelModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1DFB46BE00AC95DBA742C2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				747A32B2973E4B5DF9F33937 /* Pods_FoodApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF6167052B5D142D810835A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8B8352ACE5AF90A19074209 /* Pods-FoodApp.debug.xcconfig */,
+				04298ECC898E0B9A42383148 /* Pods-FoodApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C5EE5141FECDD43004C1791 /* Build configuration list for PBXNativeTarget "FoodApp" */;
 			buildPhases = (
+				EE2AAFC8FAD6F31EADA680C6 /* [CP] Check Pods Manifest.lock */,
 				4C5EE4FE1FECDD43004C1791 /* Sources */,
 				4C5EE4FF1FECDD43004C1791 /* Frameworks */,
 				4C5EE5001FECDD43004C1791 /* Resources */,
+				7121EF0DAD696DB1F25E0789 /* [CP] Embed Pods Frameworks */,
+				F20BA4DA3F85C9B0121CF51E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,30 +197,78 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5EE5101FECDD43004C1791 /* LaunchScreen.storyboard in Resources */,
-				4C5EE52D1FF09570004C1791 /* FoodButton.xib in Resources */,
 				4C5EE50D1FECDD43004C1791 /* Assets.xcassets in Resources */,
 				4C5EE5181FECDE0B004C1791 /* Home.storyboard in Resources */,
-				4C5EE5281FECDE6E004C1791 /* PopUpViewController.xib in Resources */,
+				4CA379FA2116B4C10094CE15 /* ThumbnailAndLabelTableViewCell.xib in Resources */,
+				4CE9FFF62119722E002AB698 /* ResultCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7121EF0DAD696DB1F25E0789 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodApp/Pods-FoodApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE2AAFC8FAD6F31EADA680C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F20BA4DA3F85C9B0121CF51E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodApp/Pods-FoodApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C5EE4FE1FECDD43004C1791 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C5EE51C1FECDE3E004C1791 /* Event.swift in Sources */,
-				4C5EE5201FECDE4C004C1791 /* PopUpViewController.swift in Sources */,
-				4C5EE5081FECDD43004C1791 /* ViewController.swift in Sources */,
+				4CA379F92116B4C10094CE15 /* ThumbnailAndLabelTableViewCell.swift in Sources */,
+				4C5EE5321FF1065E004C1791 /* WebService.swift in Sources */,
 				4C5EE51A1FECDE2E004C1791 /* MapViewController.swift in Sources */,
 				4C5EE5241FECDE58004C1791 /* Restaurant.swift in Sources */,
+				4CA379F62116AB410094CE15 /* RestaurantResult.swift in Sources */,
+				4CE9FFF52119722E002AB698 /* ResultCell.swift in Sources */,
 				4C5EE5061FECDD43004C1791 /* AppDelegate.swift in Sources */,
-				4C5EE5261FECDE60004C1791 /* RestaurantMock.swift in Sources */,
-				4C5EE52B1FF0923B004C1791 /* FoodButton.swift in Sources */,
-				4C5EE51E1FECDE45004C1791 /* Menu.swift in Sources */,
-				4C5EE5221FECDE50004C1791 /* User.swift in Sources */,
+				4CE9FFF821197743002AB698 /* TravelModel.swift in Sources */,
+				4CA379FC2116C7090094CE15 /* CustomTableView.swift in Sources */,
+				4C5EE5341FF108E2004C1791 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +395,7 @@
 		};
 		4C5EE5151FECDD43004C1791 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B8352ACE5AF90A19074209 /* Pods-FoodApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +411,7 @@
 		};
 		4C5EE5161FECDD43004C1791 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04298ECC898E0B9A42383148 /* Pods-FoodApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

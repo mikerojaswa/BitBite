@@ -24,40 +24,35 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uEq-F6-dcT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRI-wt-Rs7">
-                                <rect key="frame" x="16" y="597" width="343" height="50"/>
-                                <color key="backgroundColor" red="0.98431372549999996" green="0.10980392160000001" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="anP-8x-jbf" customClass="CustomTableView" customModule="FoodApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="414" width="375" height="253"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="68o-0j-FPx"/>
-                                    <constraint firstAttribute="width" constant="343" id="Bsc-Ue-8wa"/>
+                                    <constraint firstAttribute="height" constant="253" id="dR6-Qb-Vqe"/>
                                 </constraints>
-                                <state key="normal" title="Find food!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="findFoodButtonPressed:" destination="vnq-2e-y92" eventType="touchUpInside" id="LKN-bc-SE8"/>
-                                </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="uEq-F6-dcT" secondAttribute="trailing" id="29w-RV-NJZ"/>
-                            <constraint firstItem="GRI-wt-Rs7" firstAttribute="centerX" secondItem="uEq-F6-dcT" secondAttribute="centerX" id="5yU-cm-qjt"/>
-                            <constraint firstItem="GRI-wt-Rs7" firstAttribute="top" secondItem="uEq-F6-dcT" secondAttribute="bottom" constant="-70" id="GWv-4V-xNA"/>
-                            <constraint firstItem="uEq-F6-dcT" firstAttribute="leading" secondItem="jNX-HI-Rsb" secondAttribute="leading" id="QE9-kA-SoX"/>
-                            <constraint firstItem="uEq-F6-dcT" firstAttribute="top" secondItem="2mM-3l-Fhe" secondAttribute="bottom" constant="-20" id="hz1-2J-lq7"/>
-                            <constraint firstItem="2Ma-o0-U7G" firstAttribute="top" secondItem="uEq-F6-dcT" secondAttribute="bottom" id="yeE-vP-vxA"/>
+                            <constraint firstItem="uEq-F6-dcT" firstAttribute="top" secondItem="jNX-HI-Rsb" secondAttribute="top" id="E7m-wH-xPo"/>
+                            <constraint firstItem="2Ma-o0-U7G" firstAttribute="top" secondItem="anP-8x-jbf" secondAttribute="bottom" id="I5a-CV-gkt"/>
+                            <constraint firstItem="anP-8x-jbf" firstAttribute="leading" secondItem="jNX-HI-Rsb" secondAttribute="leading" id="Iki-cb-13S"/>
+                            <constraint firstItem="2Ma-o0-U7G" firstAttribute="top" secondItem="uEq-F6-dcT" secondAttribute="bottom" id="Jzx-mC-yyr"/>
+                            <constraint firstItem="uEq-F6-dcT" firstAttribute="leading" secondItem="jNX-HI-Rsb" secondAttribute="leading" id="V0u-5L-ORe"/>
+                            <constraint firstAttribute="trailing" secondItem="anP-8x-jbf" secondAttribute="trailing" id="f2u-0Q-OH7"/>
+                            <constraint firstAttribute="trailing" secondItem="uEq-F6-dcT" secondAttribute="trailing" id="uJn-ur-Bt2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fhC-ju-OIx"/>
                     <connections>
-                        <outlet property="findFoodButton" destination="GRI-wt-Rs7" id="jxY-Yp-gwv"/>
                         <outlet property="mapView" destination="uEq-F6-dcT" id="S1Q-rR-NUV"/>
+                        <outlet property="tableView" destination="anP-8x-jbf" id="PZT-ey-tNI"/>
+                        <outlet property="tableViewHeight" destination="dR6-Qb-Vqe" id="Dmg-Dy-fwk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ca4-m6-Kqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-503" y="776"/>
+            <point key="canvasLocation" x="-503.19999999999999" y="775.86206896551732"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BN0-hq-pYC">
