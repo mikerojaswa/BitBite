@@ -15,6 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        // 1️⃣ Create window
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+        
+        // 2️⃣ Build root with dependencies injected
+        let builder = RootBuilder(appDependencies: Dependencies())
+        let launcher = RootLauncher(root: builder.build())
+        
+        // 3️⃣ Launch
+        launcher.launch(from: window)
+        
+        // 4️⃣ Profit???
+        
         // Override point for customization after application launch.
         return true
     }

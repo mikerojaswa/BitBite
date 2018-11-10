@@ -1,12 +1,29 @@
 PODS:
-  - SwiftyJSON (4.0.0)
+  - FloatingPanel (1.1.0)
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
-  - SwiftyJSON
+  - FloatingPanel
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FloatingPanel
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
 
 SPEC CHECKSUMS:
-  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  FloatingPanel: 585c9ef2011bc31cbcd14756f2a09fb29ade6b45
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: e1a7017742f0f30852e8cd52f8a29842f63df80c
+PODFILE CHECKSUM: 206db0a9cfe2e96b3a228384d3b70fd4d7e1b8fe
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.5.3
