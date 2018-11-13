@@ -20,14 +20,15 @@ final class RootBuilder: Buildable {
     }
     
     func build() -> UIViewController {
-        // Map presenter acts as our root vc. 
+        // Map presenter acts as our root presenter. 
         let rootPresenter = MapPresenter(appDependencies: appDependencies)
         
+        // MapViewController is our root vc. 
         guard let viewController: MapViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MapViewController") as? MapViewController else {
             fatalError()
         }
         
-        // There will be retain cycles but dealing with that is out of the scope of this app.
+        
         rootPresenter.viewInterface = viewController
         viewController.eventHandler = rootPresenter
         
