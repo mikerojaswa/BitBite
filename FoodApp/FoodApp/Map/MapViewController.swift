@@ -63,7 +63,7 @@ class MapViewController: UIViewController, MapViewInterface, FloatingPanelContro
 
 class MyFloatingPanelLayout: FloatingPanelLayout {
     public var initialPosition: FloatingPanelPosition {
-        return 0
+        return .tip
     }
     
     public func insetFor(position: FloatingPanelPosition) -> CGFloat? {

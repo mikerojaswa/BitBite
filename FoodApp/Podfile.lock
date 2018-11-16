@@ -12,7 +12,7 @@ DEPENDENCIES:
   - RxSwift (~> 4.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - FloatingPanel
     - RxAtomic
     - RxCocoa
@@ -26,4 +26,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 206db0a9cfe2e96b3a228384d3b70fd4d7e1b8fe
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

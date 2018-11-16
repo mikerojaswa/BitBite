@@ -17,7 +17,7 @@ final class Api: WebService {
     func get(with url: URL, completion: @escaping ((Data?) -> ())) {
 
         let defaultSession = URLSession(configuration: .default)
-        var request = URLRequest(url: url)
+        let request = URLRequest(url: url)
         defaultSession.dataTask(with: request) { (data, _, _) in
             guard let data = data else {
                 completion(nil)

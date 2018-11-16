@@ -14,7 +14,7 @@ protocol MapEventHandler: LifeCycle {
     func requestLocationAuthorizationIfNeeded()
 }
 
-class MapPresenter: MapEventHandler {
+class MapPresenter: BasePresenter, MapEventHandler {
     func onLoaded() {
         // TODO attach search here.
     }
@@ -26,11 +26,6 @@ class MapPresenter: MapEventHandler {
     
     var viewInterface: MapViewInterface?
     let disposeBag = DisposeBag()
-    let appDependencies: AppDependencies
-    
-    init(appDependencies: AppDependencies) {
-        self.appDependencies = appDependencies
-    }
     
     func requestLocationAuthorizationIfNeeded() {
         let coordinates = CLLocationCoordinate2D(latitude: CLLocationDegrees(33.5610), longitude: CLLocationDegrees(-111.9089))
