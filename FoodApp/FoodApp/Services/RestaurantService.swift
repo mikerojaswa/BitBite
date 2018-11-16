@@ -10,17 +10,18 @@ import Foundation
 import CoreLocation
 
 public protocol RestaurantService {
-    func fetchRestauraunts(for coordinates: CLLocationCoordinate2D)
+    func fetchRestauraunts(for coordinates: CLLocationCoordinate2D, completion: @escaping ([RestaurantResult]) -> Void)
 }
 
 class RestaurantApi: RestaurantService {
+    
     let webService: WebService
     
     init(webService: WebService) {
         self.webService = webService
     }
     
-    func fetchRestauraunts(for coordinates: CLLocationCoordinate2D) {
+    func fetchRestauraunts(for coordinates: CLLocationCoordinate2D, completion: @escaping ([RestaurantResult]) -> Void) {
         let longitude = String(coordinates.longitude)
         let latitude = String(coordinates.latitude)
         let url = URL(string: "https://us-central1-bitbite-9927e.cloudfunctions.net/restaurants?lat=\(latitude)&long=\(longitude)")!
@@ -32,11 +33,12 @@ class RestaurantApi: RestaurantService {
                                                                                url: $0.image_url,
                                                                                coordinates: $0.coordinates,
                                                                                isClosed: $0.is_closed, categories: $0.categories )}
+                completion(resultModels)
                 print(resultModels)
             } catch let parseError as NSError {
                 print(parseError)
             }
-
+            
         }
         
     }

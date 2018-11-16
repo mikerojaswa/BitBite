@@ -9,9 +9,18 @@
 import UIKit
 import FloatingPanel
 
-public protocol MapViewInterface {}
+public struct RestaurantViewModel {
+    let name: String
+    let imageUrl: String
+}
+
+public protocol MapViewInterface {
+    func updateTableView(with models: [RestaurantViewModel])
+}
 
 class MapViewController: UIViewController, MapViewInterface, FloatingPanelControllerDelegate {
+
+    
     var fpc: FloatingPanelController!
     var eventHandler: MapEventHandler?
     
@@ -45,12 +54,16 @@ class MapViewController: UIViewController, MapViewInterface, FloatingPanelContro
     func floatingPanel(_ vc: FloatingPanelController, layoutFor newCollection: UITraitCollection) -> FloatingPanelLayout? {
         return MyFloatingPanelLayout()
     }
+    
+    func updateTableView(with models: [RestaurantViewModel]) {
+        
+    }
 }
 
 
 class MyFloatingPanelLayout: FloatingPanelLayout {
     public var initialPosition: FloatingPanelPosition {
-        return .tip
+        return 0
     }
     
     public func insetFor(position: FloatingPanelPosition) -> CGFloat? {

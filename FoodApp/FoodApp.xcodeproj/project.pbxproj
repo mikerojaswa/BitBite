@@ -21,6 +21,8 @@
 		4C5EE5321FF1065E004C1791 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE5311FF1065E004C1791 /* WebService.swift */; };
 		4C5EE5341FF108E2004C1791 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE5331FF108E2004C1791 /* Extensions.swift */; };
 		4CA379F62116AB410094CE15 /* RestaurantResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA379F52116AB410094CE15 /* RestaurantResult.swift */; };
+		4CC72698219E9E0A0065A4C5 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC72697219E9E0A0065A4C5 /* SearchPresenter.swift */; };
+		4CC7269B219E9E540065A4C5 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC7269A219E9E540065A4C5 /* Presenter.swift */; };
 		4CE9FFF821197743002AB698 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9FFF721197743002AB698 /* TravelModel.swift */; };
 		4CFC8C792196BAAC007C2FA1 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC8C782196BAAC007C2FA1 /* LocationService.swift */; };
 		B5C583CA5F49170276235F6E /* Pods_FoodApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747A32B2973E4B5DF9F33937 /* Pods_FoodApp.framework */; };
@@ -48,6 +50,8 @@
 		4C5EE5311FF1065E004C1791 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		4C5EE5331FF108E2004C1791 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4CA379F52116AB410094CE15 /* RestaurantResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantResult.swift; sourceTree = "<group>"; };
+		4CC72697219E9E0A0065A4C5 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		4CC7269A219E9E540065A4C5 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		4CE9FFF721197743002AB698 /* TravelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
 		4CFC8C782196BAAC007C2FA1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		747A32B2973E4B5DF9F33937 /* Pods_FoodApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +115,7 @@
 		4C5EE5041FECDD43004C1791 /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				4CC72699219E9E440065A4C5 /* Base */,
 				4C583F112196B81C00997A0D /* RootLaunch */,
 				4C5EE5331FF108E2004C1791 /* Extensions.swift */,
 				4C583F012196A83400997A0D /* Services */,
@@ -134,6 +139,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4CC72699219E9E440065A4C5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4CC7269A219E9E540065A4C5 /* Presenter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		4CFC8C752196BA73007C2FA1 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +155,7 @@
 				4C5EE5191FECDE2E004C1791 /* MapViewController.swift */,
 				B6C41D29219A4C7800C01B4B /* Search.storyboard */,
 				B6C41D2B219A4C9900C01B4B /* SearchViewController.swift */,
+				4CC72697219E9E0A0065A4C5 /* SearchPresenter.swift */,
 				B6C41D2D219A522D00C01B4B /* LabelAndImageTableViewCell.swift */,
 				B6C41D2E219A522D00C01B4B /* LabelAndImageTableViewCell.xib */,
 			);
@@ -289,6 +303,7 @@
 				4C583F0A2196AD7700997A0D /* AppDependencies.swift in Sources */,
 				4C583F062196AB4100997A0D /* RootBuilder.swift in Sources */,
 				4C583F002196A22000997A0D /* RestaurantService.swift in Sources */,
+				4CC7269B219E9E540065A4C5 /* Presenter.swift in Sources */,
 				4C583F0C2196B1BB00997A0D /* RootLauncher.swift in Sources */,
 				4C5EE5321FF1065E004C1791 /* WebService.swift in Sources */,
 				4C5EE51A1FECDE2E004C1791 /* MapViewController.swift in Sources */,
@@ -300,6 +315,7 @@
 				B6C41D2F219A522D00C01B4B /* LabelAndImageTableViewCell.swift in Sources */,
 				4CE9FFF821197743002AB698 /* TravelModel.swift in Sources */,
 				4C5EE5341FF108E2004C1791 /* Extensions.swift in Sources */,
+				4CC72698219E9E0A0065A4C5 /* SearchPresenter.swift in Sources */,
 				4C583F0E2196B64C00997A0D /* MapPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

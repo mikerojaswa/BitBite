@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct RestaurantResult {
+public struct RestaurantResult {
     var text: String
     var url: String = ""
     var coordinates: Coordinates
