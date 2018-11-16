@@ -15,7 +15,7 @@ protocol Buildable {
 final class RootBuilder: Buildable {
     let appDependencies: AppDependencies
     
-    init(appDependencies: AppDependencies) {
+    init() {
         self.appDependencies = Dependencies()
     }
     

@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         
-        // 2️⃣ Build root with dependencies injected
-        let builder = RootBuilder(appDependencies: Dependencies())
+        // 2️⃣ Build root
+        let builder = RootBuilder()
         let launcher = RootLauncher(root: builder.build())
         
         // 3️⃣ Launch
