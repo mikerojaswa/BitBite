@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import CoreLocation
 
 protocol MapEventHandler {
     func requestLocationAuthorizationIfNeeded()
@@ -22,10 +23,9 @@ class MapPresenter: MapEventHandler {
     }
     
     func requestLocationAuthorizationIfNeeded() {
+        let coordinates = CLLocationCoordinate2D(latitude: CLLocationDegrees(33.5610), longitude: CLLocationDegrees(-111.9089))
+        appDependencies.restaurantService.fetchRestauraunts(for: coordinates)
         appDependencies.locationService.requestLocationPermission()
-        appDependencies.locationService.locationObservable.subscribe({ status in
-            print(status.element)
-        }).disposed(by: disposeBag)
     }
     
 }

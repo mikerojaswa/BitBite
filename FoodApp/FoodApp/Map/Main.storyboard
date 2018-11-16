@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="gad-kh-rec">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c64-2i-nTs" customClass="MapViewController" customModule="FoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mHW-wZ-g5l"/>
+                        <viewControllerLayoutGuide type="bottom" id="66A-NA-wqi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uoK-fB-1zC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TQk-Rg-E06">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TQk-Rg-E06" secondAttribute="trailing" id="IzZ-SF-obs"/>
+                            <constraint firstAttribute="bottom" secondItem="TQk-Rg-E06" secondAttribute="bottom" id="OFO-OI-PsB"/>
+                            <constraint firstItem="TQk-Rg-E06" firstAttribute="leading" secondItem="uoK-fB-1zC" secondAttribute="leading" id="Tpn-mN-Y7q"/>
+                            <constraint firstItem="TQk-Rg-E06" firstAttribute="top" secondItem="uoK-fB-1zC" secondAttribute="top" id="ysM-c0-UXQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NlT-I0-7EN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-737.68115942028987" y="732.58928571428567"/>
+        </scene>
+    </scenes>
+</document>

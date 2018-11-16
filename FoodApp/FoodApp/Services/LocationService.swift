@@ -11,14 +11,14 @@ import RxSwift
 
 public class LocationService: NSObject, CLLocationManagerDelegate {
     private let locationManager = CLLocationManager()
-    private let locationStatus: Observable<CLAuthorizationStatus>
+    //private let locationStatus: Observable<CLAuthorizationStatus>
          
-    public var locationObservable: Observable<CLAuthorizationStatus> {
-        return locationStatus.asObservable()
-    }
+//    public var locationObservable: Observable<CLAuthorizationStatus> {
+//        return locationStatus.asObservable()
+//    }
     
     override init() {
-        self.locationStatus = Observable(CLLocationManager.authorizationStatus())
+        //self.locationStatus = Observable(CLLocationManager.authorizationStatus())
 
         super.init()
         locationManager.delegate = self
@@ -42,6 +42,6 @@ public class LocationService: NSObject, CLLocationManagerDelegate {
     }
     
     private func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        self.locationStatus.value = status
+        //self.locationStatus.value = status
     }
 }
